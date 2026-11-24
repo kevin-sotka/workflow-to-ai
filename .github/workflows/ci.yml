@@ -1,0 +1,29 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate skill
+        run: python tools/validate_skill.py skills/workflow-to-ai
+      - name: Voice lint
+        run: python tools/lint_voice.py .
+      - name: Build zip
+        run: bash tools/package_skill.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: workflow-to-ai-skill
+          path: dist/workflow-to-ai.zip

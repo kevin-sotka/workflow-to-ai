@@ -1,0 +1,159 @@
+{
+  "title": "Business case: vendor payment inquiry helper",
+  "currency": "$",
+  "scenarios": {
+    "conservative": {
+      "occurrences_per_month": {
+        "value": 340,
+        "basis": "estimated"
+      },
+      "minutes_before": {
+        "value": 8.5,
+        "basis": "measured"
+      },
+      "minutes_after": {
+        "value": 3.5,
+        "basis": "estimated"
+      },
+      "loaded_hourly_rate": {
+        "value": 40,
+        "basis": "assumed"
+      },
+      "adoption_rate": {
+        "value": 0.6,
+        "basis": "assumed"
+      },
+      "other_value_per_month": {
+        "value": 280,
+        "basis": "estimated"
+      },
+      "setup_costs": {
+        "build_and_test_hours": {
+          "value": 2400,
+          "basis": "estimated"
+        },
+        "erp_report_and_flow": {
+          "value": 2500,
+          "basis": "estimated"
+        },
+        "training_and_launch": {
+          "value": 400,
+          "basis": "estimated"
+        }
+      },
+      "monthly_run_costs": {
+        "automation_premium_and_usage": {
+          "value": 120,
+          "basis": "estimated"
+        },
+        "owner_upkeep_hours": {
+          "value": 240,
+          "basis": "estimated"
+        }
+      },
+      "value_type": "capacity"
+    },
+    "expected": {
+      "occurrences_per_month": {
+        "value": 300,
+        "basis": "estimated"
+      },
+      "minutes_before": {
+        "value": 8.5,
+        "basis": "measured"
+      },
+      "minutes_after": {
+        "value": 2.5,
+        "basis": "estimated"
+      },
+      "loaded_hourly_rate": {
+        "value": 40,
+        "basis": "assumed"
+      },
+      "adoption_rate": {
+        "value": 0.8,
+        "basis": "assumed"
+      },
+      "other_value_per_month": {
+        "value": 700,
+        "basis": "estimated"
+      },
+      "setup_costs": {
+        "build_and_test_hours": {
+          "value": 1600,
+          "basis": "estimated"
+        },
+        "erp_report_and_flow": {
+          "value": 2000,
+          "basis": "estimated"
+        },
+        "training_and_launch": {
+          "value": 300,
+          "basis": "estimated"
+        }
+      },
+      "monthly_run_costs": {
+        "automation_premium_and_usage": {
+          "value": 80,
+          "basis": "estimated"
+        },
+        "owner_upkeep_hours": {
+          "value": 160,
+          "basis": "estimated"
+        }
+      },
+      "value_type": "capacity"
+    },
+    "optimistic": {
+      "occurrences_per_month": {
+        "value": 290,
+        "basis": "estimated"
+      },
+      "minutes_before": {
+        "value": 8.5,
+        "basis": "measured"
+      },
+      "minutes_after": {
+        "value": 2.0,
+        "basis": "estimated"
+      },
+      "loaded_hourly_rate": {
+        "value": 40,
+        "basis": "assumed"
+      },
+      "adoption_rate": {
+        "value": 0.9,
+        "basis": "assumed"
+      },
+      "other_value_per_month": {
+        "value": 900,
+        "basis": "estimated"
+      },
+      "setup_costs": {
+        "build_and_test_hours": {
+          "value": 1600,
+          "basis": "estimated"
+        },
+        "erp_report_and_flow": {
+          "value": 2000,
+          "basis": "estimated"
+        },
+        "training_and_launch": {
+          "value": 300,
+          "basis": "estimated"
+        }
+      },
+      "monthly_run_costs": {
+        "automation_premium_and_usage": {
+          "value": 80,
+          "basis": "estimated"
+        },
+        "owner_upkeep_hours": {
+          "value": 120,
+          "basis": "estimated"
+        }
+      },
+      "value_type": "capacity"
+    }
+  }
+}

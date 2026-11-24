@@ -1,0 +1,15 @@
+{
+  "name": "meatbag-method",
+  "description": "Skills from The Meatbag Method by Kevin Sotka: plain-language AI for people who are not technical.",
+  "owner": {
+    "name": "Kevin Sotka",
+    "url": "https://meatbagmade.com/method/"
+  },
+  "plugins": [
+    {
+      "name": "workflow-to-ai",
+      "source": "./",
+      "description": "Turn a workflow pain point into a working, tested AI helper, a business case, and a rollout plan."
+    }
+  ]
+}

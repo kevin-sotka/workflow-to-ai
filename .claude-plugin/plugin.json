@@ -1,0 +1,13 @@
+{
+  "name": "workflow-to-ai",
+  "description": "A Meatbag Method skill that turns a workflow pain point into a working, tested AI helper, a business case, and a rollout plan. For operations teams in HR, finance, procurement, supply chain, sales, marketing, customer service, legal, government affairs, and IT.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kevin Sotka",
+    "url": "https://meatbagmade.com/method/"
+  },
+  "homepage": "https://github.com/kevin-sotka/workflow-to-ai",
+  "repository": "https://github.com/kevin-sotka/workflow-to-ai",
+  "license": "MIT",
+  "keywords": ["operations", "workflow", "process improvement", "ai enablement", "agents", "evals", "business case", "meatbag method"]
+}

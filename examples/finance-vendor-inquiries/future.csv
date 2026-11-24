@@ -1,0 +1,8 @@
+step_id,step,actor,tool,input,output,touch_minutes,wait_minutes,type,pain,error_prone,single_point,autonomy,checkpoint,notes
+F1,Auto-reply with supplier portal link,Automation,Mail flow,Vendor email,Acknowledgment with portal link,0,0,copy,0,n,n,,,Rung 2: portal already shows payment status
+F2,Extract vendor and invoice number,AI helper,Copilot agent,Email and attachments,Vendor ID and invoice number,0,0,transform,0,n,n,L2,Rule checks number format,Validated against ERP format rules
+F3,Look up status and holds,Automation,ERP saved report,Invoice number,Status and hold reason,0,0,lookup,0,n,n,,,Hold reason field added to report (process change)
+F4,Draft the reply with sources,AI helper,Copilot agent,Status and hold reason,Draft reply,0,0,language,0,n,n,L2,,Escalates disputes and legal language
+F5,Review and send,AP specialist,Shared inbox,Draft reply,Sent reply,1.5,0,approval,0,n,n,,Reviewer checklist,Reject or escalate in one click
+F6,Handle disputes and exceptions,AP lead,Shared inbox,Escalation summary,Resolution,1.0,0,judgment,1,n,n,,,Dispute rules now written down in the SOP
+F7,Log the inquiry,Automation,Tracker,Sent reply,Tracker row,0,0,copy,0,n,n,,,

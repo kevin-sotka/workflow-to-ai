@@ -1,0 +1,9 @@
+step_id,step,actor,tool,input,output,touch_minutes,wait_minutes,type,pain,error_prone,single_point,autonomy,checkpoint,notes
+S1,Read the inquiry email,AP specialist,Shared inbox,Vendor email,Understood request,1.0,0,language,1,n,n,,,Many emails ask two or three things at once
+S2,Find vendor and invoice number,AP specialist,Shared inbox,Email and attachments,Vendor ID and invoice number,1.0,0,transform,2,y,n,,,Vendors often quote remittance or PO numbers instead
+S3,Look up the invoice in the ERP,AP specialist,ERP,Invoice number,Invoice record,1.5,0,lookup,2,n,n,,,Three screens to reach payment status
+S4,Check payment status and holds,AP specialist,ERP,Invoice record,Status and hold codes,1.0,0,lookup,1,y,n,,,Hold codes are cryptic
+S5,Ask the buyer about a hold,AP specialist,Teams,Hold code,Hold reason,0.5,48,wait,3,n,n,,,Averaged: about 1 in 5 inquiries waits about 4 hours for the buyer
+S6,Write the reply,AP specialist,Shared inbox,Status and hold reason,Reply email,2.0,0,language,2,n,n,,,Tone varies by person
+S7,Log the inquiry in the tracker,AP specialist,Excel,Reply,Tracker row,0.5,0,copy,1,n,n,,,Tracker used for monthly volume report
+S8,Handle disputes and exceptions,AP lead,Shared inbox,Escalated email,Resolution,1.0,0,judgment,2,n,y,,,Only the AP lead knows the dispute rules

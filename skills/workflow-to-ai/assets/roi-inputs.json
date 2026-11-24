@@ -1,0 +1,46 @@
+{
+  "title": "Business case: <helper name>",
+  "currency": "$",
+  "scenarios": {
+    "conservative": {
+      "occurrences_per_month": {"value": 0, "basis": "measured"},
+      "minutes_before": {"value": 0, "basis": "measured"},
+      "minutes_after": {"value": 0, "basis": "estimated"},
+      "loaded_hourly_rate": {"value": 0, "basis": "assumed"},
+      "adoption_rate": {"value": 0.5, "basis": "assumed"},
+      "other_value_per_month": {"value": 0, "basis": "estimated"},
+      "setup_costs": {
+        "build_and_test_hours": {"value": 0, "basis": "estimated"},
+        "it_security_review": {"value": 0, "basis": "estimated"},
+        "training_and_launch": {"value": 0, "basis": "estimated"}
+      },
+      "monthly_run_costs": {
+        "licenses_or_usage": {"value": 0, "basis": "estimated"},
+        "owner_upkeep_hours": {"value": 0, "basis": "estimated"}
+      },
+      "value_type": "capacity"
+    },
+    "expected": {
+      "occurrences_per_month": 0,
+      "minutes_before": 0,
+      "minutes_after": 0,
+      "loaded_hourly_rate": 0,
+      "adoption_rate": 0.7,
+      "other_value_per_month": 0,
+      "setup_costs": {"build_and_test_hours": 0, "it_security_review": 0, "training_and_launch": 0},
+      "monthly_run_costs": {"licenses_or_usage": 0, "owner_upkeep_hours": 0},
+      "value_type": "capacity"
+    },
+    "optimistic": {
+      "occurrences_per_month": 0,
+      "minutes_before": 0,
+      "minutes_after": 0,
+      "loaded_hourly_rate": 0,
+      "adoption_rate": 0.9,
+      "other_value_per_month": 0,
+      "setup_costs": {"build_and_test_hours": 0, "it_security_review": 0, "training_and_launch": 0},
+      "monthly_run_costs": {"licenses_or_usage": 0, "owner_upkeep_hours": 0},
+      "value_type": "capacity"
+    }
+  }
+}
